@@ -1,7 +1,7 @@
-const urlObtenerUsuarios = 'http://localhost/CRUD_MySQL_PHP_JavaScript/api/obtenerUsuarios.php'
-const urlAgregarUsuario = 'http://localhost/CRUD_MySQL_PHP_JavaScript/api/agregarUsuario.php'
-const urlEditarUsuario = 'http://localhost/CRUD_MySQL_PHP_JavaScript/api/editarUsuario.php'
-const urlBorrarUsuario = 'http://localhost/CRUD_MySQL_PHP_JavaScript/api/borrarUsuario.php'
+const urlObtenerUsuarios = 'http://localhost/API/API_primero/api/obtenerUsuario.php'
+const urlAgregarUsuario = 'http://localhost/API/API_primero/api/agregarUsuario.php'
+const urlEditarUsuario = 'http://localhost/API/API_primero/api/editarUsuario.php'
+const urlBorrarUsuario = 'http://localhost/API/API_primero/api/borrarUsuario.php'
 
 let listaEmpleados = []
 
@@ -48,7 +48,7 @@ async function obtenerEmpleados() {
     listaEmpleados = await fetch(urlObtenerUsuarios)
     .then(respuesta => respuesta.json())
     .then(datos => datos)
-    .catch(error => console.log(error))
+    .catch(error => console.log(error))     
 
     mostrarEmpleados()
 

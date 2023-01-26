@@ -109,7 +109,7 @@ async function agregarEmpleado() {
 }
 
 async function editarEmpleado() {
-
+    
     objEmpleado.usuario = usuarioInput.value
     objEmpleado.contrasena = contrasenaInput.value
     objEmpleado.email = emailInput.value
